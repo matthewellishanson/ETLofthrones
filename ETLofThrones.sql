@@ -42,5 +42,18 @@ LastName varchar(50),
 Popularity float
 );
 
+alter table Characters drop column LastName;
+alter table Characters 
+change FirstName CharacterName varchar(150);
+
+alter table Deaths drop column LastName;
+alter table Deaths
+change FirstName CharacterName varchar(150);
+
+alter table Discussion drop column LastName;
+alter table Discussion
+change FirstName CharacterName varchar(150);
+
+
 
 
