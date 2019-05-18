@@ -56,6 +56,8 @@ change FirstName CharacterName varchar(150);
 
 select * from Deaths;
 
+#Turn safe mode off
+
 UPDATE Deaths D
 INNER JOIN Characters C ON D.CharacterName = C.CharacterName
 SET D.Character_ID = C.Character_ID;
