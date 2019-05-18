@@ -54,6 +54,22 @@ alter table Discussion drop column LastName;
 alter table Discussion
 change FirstName CharacterName varchar(150);
 
+select * from Deaths;
+
+UPDATE Deaths D
+INNER JOIN Characters C ON D.CharacterName = C.CharacterName
+SET D.Character_ID = C.Character_ID;
+
+Update Characters C 
+inner join Deaths D on D.CharacterName = C.CharacterName
+set C.Death_ID = D.Death_ID;
+
+UPDATE Discussion DS
+INNER JOIN Characters C ON DS.CharacterName = C.CharacterName
+SET DS.Character_ID = C.Character_ID;
+
+select * from Discussion;
+
+alter table Characters drop column DeathStatus;
 
 select * from Characters;
-select * from Battles;
