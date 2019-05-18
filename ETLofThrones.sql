@@ -55,5 +55,5 @@ alter table Discussion
 change FirstName CharacterName varchar(150);
 
 
-
-
+select * from Characters;
+select * from Battles;
